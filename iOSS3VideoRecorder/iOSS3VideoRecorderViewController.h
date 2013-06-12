@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "iosS3VideoRecorder.h"
 
-@interface iOSS3VideoRecorderViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface iOSS3VideoRecorderViewController : UIViewController {
     @private iOSS3VideoRecorder* recorder;
 }
 - (IBAction)showVideoRecorder:(id)sender;

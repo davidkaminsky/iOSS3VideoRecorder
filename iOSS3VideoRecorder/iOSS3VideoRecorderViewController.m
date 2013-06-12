@@ -14,8 +14,7 @@
 
 @implementation iOSS3VideoRecorderViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
@@ -23,11 +22,11 @@
     recorder.viewController = self;
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)showVideoRecorder:(id)sender {
     [recorder showVideoRecorder];
 }

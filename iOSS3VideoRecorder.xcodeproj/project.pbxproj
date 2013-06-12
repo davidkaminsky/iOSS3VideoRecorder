@@ -26,6 +26,10 @@
 		722BB29F17682B0500EE627C /* iOSS3VideoRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 722BB29E17682B0500EE627C /* iOSS3VideoRecorderTests.m */; };
 		72AE7A8917682F6500F2EA97 /* iOSS3VideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7A8817682F6500F2EA97 /* iOSS3VideoRecorder.m */; };
 		72AE7A8B1768396500F2EA97 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AE7A8A1768396500F2EA97 /* MobileCoreServices.framework */; };
+		72AE7A8F1768446A00F2EA97 /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AE7A8E1768446A00F2EA97 /* AWSS3.framework */; };
+		72AE7A93176845D300F2EA97 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AE7A92176845D300F2EA97 /* Reachability.m */; };
+		72AE7A9617684B1B00F2EA97 /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AE7A9517684B1B00F2EA97 /* AWSRuntime.framework */; };
+		72AE7A9A176850D400F2EA97 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72AE7A99176850D400F2EA97 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,12 @@
 		72AE7A8717682F6500F2EA97 /* iOSS3VideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iOSS3VideoRecorder.h; path = Library/iOSS3VideoRecorder.h; sourceTree = "<group>"; };
 		72AE7A8817682F6500F2EA97 /* iOSS3VideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iOSS3VideoRecorder.m; path = Library/iOSS3VideoRecorder.m; sourceTree = "<group>"; };
 		72AE7A8A1768396500F2EA97 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		72AE7A8E1768446A00F2EA97 /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSS3.framework; path = iOSS3VideoRecorder/Frameworks/AWSS3.framework; sourceTree = "<group>"; };
+		72AE7A91176845D300F2EA97 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Utils/Reachability.h; sourceTree = "<group>"; };
+		72AE7A92176845D300F2EA97 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Utils/Reachability.m; sourceTree = "<group>"; };
+		72AE7A941768467200F2EA97 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		72AE7A9517684B1B00F2EA97 /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSRuntime.framework; path = iOSS3VideoRecorder/Frameworks/AWSRuntime.framework; sourceTree = "<group>"; };
+		72AE7A99176850D400F2EA97 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72AE7A9A176850D400F2EA97 /* SystemConfiguration.framework in Frameworks */,
+				72AE7A9617684B1B00F2EA97 /* AWSRuntime.framework in Frameworks */,
+				72AE7A8F1768446A00F2EA97 /* AWSS3.framework in Frameworks */,
 				72AE7A8B1768396500F2EA97 /* MobileCoreServices.framework in Frameworks */,
 				722BB26B17682B0400EE627C /* UIKit.framework in Frameworks */,
 				722BB26D17682B0400EE627C /* Foundation.framework in Frameworks */,
@@ -95,7 +108,6 @@
 		722BB25E17682B0400EE627C = {
 			isa = PBXGroup;
 			children = (
-				72AE7A8A1768396500F2EA97 /* MobileCoreServices.framework */,
 				722BB27017682B0400EE627C /* iOSS3VideoRecorder */,
 				722BB29717682B0500EE627C /* iOSS3VideoRecorderTests */,
 				722BB26917682B0400EE627C /* Frameworks */,
@@ -115,6 +127,10 @@
 		722BB26917682B0400EE627C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72AE7A99176850D400F2EA97 /* SystemConfiguration.framework */,
+				72AE7A9517684B1B00F2EA97 /* AWSRuntime.framework */,
+				72AE7A8E1768446A00F2EA97 /* AWSS3.framework */,
+				72AE7A8A1768396500F2EA97 /* MobileCoreServices.framework */,
 				722BB26A17682B0400EE627C /* UIKit.framework */,
 				722BB26C17682B0400EE627C /* Foundation.framework */,
 				722BB26E17682B0400EE627C /* CoreGraphics.framework */,
@@ -126,6 +142,7 @@
 		722BB27017682B0400EE627C /* iOSS3VideoRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				72AE7A901768458700F2EA97 /* Utils */,
 				72AE7A8617682F3D00F2EA97 /* Library */,
 				722BB27917682B0400EE627C /* iOSS3VideoRecorderAppDelegate.h */,
 				722BB27A17682B0400EE627C /* iOSS3VideoRecorderAppDelegate.m */,
@@ -134,6 +151,7 @@
 				722BB28817682B0400EE627C /* iOSS3VideoRecorderViewController.h */,
 				722BB28917682B0400EE627C /* iOSS3VideoRecorderViewController.m */,
 				722BB27117682B0400EE627C /* Supporting Files */,
+				72AE7A941768467200F2EA97 /* Settings.h */,
 			);
 			path = iOSS3VideoRecorder;
 			sourceTree = "<group>";
@@ -178,6 +196,15 @@
 				72AE7A8817682F6500F2EA97 /* iOSS3VideoRecorder.m */,
 			);
 			name = Library;
+			sourceTree = "<group>";
+		};
+		72AE7A901768458700F2EA97 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				72AE7A91176845D300F2EA97 /* Reachability.h */,
+				72AE7A92176845D300F2EA97 /* Reachability.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +323,7 @@
 				722BB27B17682B0400EE627C /* iOSS3VideoRecorderAppDelegate.m in Sources */,
 				722BB28A17682B0400EE627C /* iOSS3VideoRecorderViewController.m in Sources */,
 				72AE7A8917682F6500F2EA97 /* iOSS3VideoRecorder.m in Sources */,
+				72AE7A93176845D300F2EA97 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +442,17 @@
 		722BB2A317682B0500EE627C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSS3VideoRecorder/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSS3VideoRecorder/iOSS3VideoRecorder-Prefix.pch";
 				INFOPLIST_FILE = "iOSS3VideoRecorder/iOSS3VideoRecorder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSS3VideoRecorder/Frameworks/AWSS3.framework/Versions/A\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -425,9 +461,17 @@
 		722BB2A417682B0500EE627C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSS3VideoRecorder/Frameworks\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSS3VideoRecorder/iOSS3VideoRecorder-Prefix.pch";
 				INFOPLIST_FILE = "iOSS3VideoRecorder/iOSS3VideoRecorder-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iOSS3VideoRecorder/Frameworks/AWSS3.framework/Versions/A\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
